@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chronos-id"
+version = "1.0.0"
+description = "Post-Quantum Sovereign Passport, Lattice Cryptography & Zero-Knowledge Personhood for Pi Network"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Chronos-ID Sovereign Identity Contributors", email = "identity@chronos-id.io"}
+]
+dependencies = [
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+chronos-id = "chronos_id.cli.main:main"
